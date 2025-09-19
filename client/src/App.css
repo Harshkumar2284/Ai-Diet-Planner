@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+.footer-column{
+    color: blue;
+}
+
+.store-buttons{
+    height: 100px;
+    width: 150px;
+}
