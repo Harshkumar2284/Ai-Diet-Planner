@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h1 className=' text-2xl text-black font-bold underline'>AI PLANner</h1>
+      <h1 className=' text-2xl text-black font-bold underline'>AI PLANnerrrrrrrrr</h1>
     </>
   )
 }
