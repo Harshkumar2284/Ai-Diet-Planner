@@ -4,13 +4,13 @@ import axios from 'axios'
 export default function Login() {
   // Controlled Inputs
   const [username, setUsername] = useState("")
-  const [password,setPassword] = useState("")
+  const [password, setPassword] = useState("")
 
   // Input Change Functions
-  const handleUsername = (e)=>{
+  const handleUsername = (e) => {
     setUsername(e.target.value)
   }
-  const handlePassword = (e)=>{
+  const handlePassword = (e) => {
     setPassword(e.target.value)
   }
 
@@ -19,13 +19,16 @@ export default function Login() {
       <h1 className=' font-sans font-bold text-gray-700 text-4xl'>Sign In</h1>
       <div className='flex flex-col w-full'>
         <label htmlFor="username" className='text-lg font-semibold text-zinc-800'>Username:</label>
-        <input type="text" className='border rounded-lg  px-2 py-1 font-semibold text-md text-zinc-600' value={username} onChange={handleUsername}/>
+        <input type="text" className='border rounded-lg  px-2 py-1 font-semibold text-md text-zinc-600' value={username} onChange={handleUsername} />
       </div>
       <div className='flex flex-col w-full'>
         <label htmlFor="password" className='text-lg font-semibold text-zinc-800'>Password:</label>
-        <input type="password" className='border rounded-lg px-2 py-1 font-semibold text-md text-zinc-600' value={password} onChange={handlePassword}/>
+        <input type="password" className='border rounded-lg px-2 py-1 font-semibold text-md text-zinc-600' value={password} onChange={handlePassword} />
       </div>
-      <button className='border px-2 rounded-md py-1 hover:bg-blue-700 transition-all duration-200 hover:text-fuchsia-50'>Sign In</button>
+      <div className='flex flex-col items-center'>
+        <button className='border px-2 rounded-md py-1 text-zinc-800 font-semibold hover:cursor-pointer hover:bg-blue-700 transition-all duration-200 hover:text-fuchsia-50'>Sign In</button>
+        <h1 className=' hover:underline hover:cursor-pointer'>Don't have an account?Sign Up now!</h1>
+      </div>
     </div>
   )
 }
