@@ -1,55 +1,24 @@
-import React from 'react'
-import useState from 'react'
+import React, { useState } from 'react';
+import GreyScreen from './GreyScreen';
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [authenticate, setAuthenticate] = useState("hidden");
+
   return (
-    <header className="bg-[#1a1a1a] text-white">
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-        {/* Logo */}
-        <div className="flex items-center gap-2">
-          <span className="text-orange-500 text-2xl font-bold">🥕</span>
-          <h1 className="font-bold text-lg">eat this much</h1>
-        </div>
-
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-6">
-          <a href="#" className="hover:text-orange-400 transition">Supported Diets</a>
-          <a href="#" className="hover:text-orange-400 transition">Pricing</a>
-          <a href="#" className="hover:text-orange-400 transition">For Professionals</a>
-        </nav>
-
-        {/* Right Side */}
-        <div className="hidden md:flex items-center gap-4">
-          <a href="#" className="text-sm">Sign in</a>
-          <button className="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-md font-medium">
-            Sign Up
-          </button>
-        </div>
-
-
-        {/* Mobile Hamburger */}
-        <button
-          className="md:hidden text-2xl"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          ☰
-        </button>
+    <nav className=' w-full border-1 border-black py-4 bg-zinc-800 flex justify-around' style={{color:"#f07651"}}>
+      <div>
+        <h1 className=' text-4xl mt-3 font-lg' style={{fontFamily:"cursive"}}><span className='font-bold'>B</span>ite<span className='font-bold'>B</span>ot</h1>
       </div>
-
-
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-[#1a1a1a] px-6 py-4 space-y-4">
-          <a href="#" className="block hover:text-orange-400 transition">Supported Diets</a>
-          <a href="#" className="block hover:text-orange-400 transition">Pricing</a>
-          <a href="#" className="block hover:text-orange-400 transition">For Professionals</a>
-          <a href="#" className="block text-sm">Sign in</a>
-          <button className="w-full bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-md font-medium">
-            Sign Up
-          </button>
-        </div>
-      )}
-    </header>
-  )
+      <list className="flex justify-around list-none mt-3">
+        <li className=' font-semibold hover:text-orange-500 text-lg hover:cursor-pointer transition-colors duration-150 hover:underline'>Supported Diets</li>
+        <li className=' font-semibold hover:text-orange-500 text-lg hover:cursor-pointer transition-colors duration-150 hover:underline ml-14'>Pricing</li>
+        <li className=' font-semibold hover:text-orange-500 text-lg hover:cursor-pointer transition-colors duration-150 hover:underline ml-14'>For Professionals</li>
+      </list>
+      <div className='flex flex-col items-center'>
+        <button className='w-20 py-2 rounded-xl hover:cursor-pointer text-white font-semibold' style={{backgroundColor:"#f07651"}}>SignUp</button>
+        <h1 className='hover:underline hover:cursor-pointer'>Already a member? Sign In</h1>
+      </div>
+      <GreyScreen display={authenticate} />
+    </nav>
+  );
 }

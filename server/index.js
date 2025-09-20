@@ -1,10 +1,5 @@
 const express = require("express")
-<<<<<<< HEAD
-const port = 5000;
-
-=======
 const port = process.env.PORT || 8080
->>>>>>> 1cb819f386a43ac854926e7edbe6514c2688389f
 const app = express();
 const cors = require("cors")
 

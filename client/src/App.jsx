@@ -4,11 +4,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
+import GreyScreen from './Components/GreyScreen'
 
 function App() {
 
   return (
     <>
+      <Navbar />
       <Footer />
     </>
   )
