@@ -3,27 +3,20 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './Components/Navbar'
-<<<<<<< HEAD
-=======
-import Login from './Components/Login'
 import Footer from './Components/Footer'
->>>>>>> e5dd2157b71fcb65e187c05c9a0ebcb4726dc090
+import GreyScreen from './Components/GreyScreen'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-<<<<<<< HEAD
-      <Navbar>Hello</Navbar>
+      <Navbar/>
+      <Footer/>
+      <GreyScreen/>
       <h1 className=' text-2xl text-black font-bold underline'>AI PLANner</h1>
-=======
-      <Navbar />
-
-      <Footer />
->>>>>>> e5dd2157b71fcb65e187c05c9a0ebcb4726dc090
     </>
   )
-}
+};
 
 export default App 
