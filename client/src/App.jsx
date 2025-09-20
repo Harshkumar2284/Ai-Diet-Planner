@@ -7,14 +7,18 @@ import Footer from './Components/Footer'
 import GreyScreen from './Components/GreyScreen'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
+<<<<<<< HEAD
       <Navbar/>
       <Footer/>
       <GreyScreen/>
       <h1 className=' text-2xl text-black font-bold underline'>AI PLANner</h1>
+=======
+      <Navbar />
+      <Footer />
+>>>>>>> a41397d42e7fe28c1ec9452b74dc668fdb9af862
     </>
   )
 };

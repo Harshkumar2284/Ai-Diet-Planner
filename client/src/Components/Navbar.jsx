@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-// Navbar.jsx
-// TailwindCSS-based responsive navbar inspired by https://www.eatthismuch.com/
 
 export default function Navbar({ logoSrc = "Ai-Diet-Planner\client\src\assets\logo.png", onSignIn, onSignUp }) {
   const [mobileOpen, setMobileOpen] = useState(false);
