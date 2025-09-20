@@ -10,15 +10,8 @@ function App() {
 
   return (
     <>
-<<<<<<< HEAD
       <Navbar/>
       <Footer/>
-      <GreyScreen/>
-      <h1 className=' text-2xl text-black font-bold underline'>AI PLANner</h1>
-=======
-      <Navbar />
-      <Footer />
->>>>>>> a41397d42e7fe28c1ec9452b74dc668fdb9af862
     </>
   )
 };
