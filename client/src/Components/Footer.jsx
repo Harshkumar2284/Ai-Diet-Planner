@@ -4,15 +4,6 @@ export default function Footer() {
   return (
     <footer className="w-full bg-gray-200 py-3 fixed bottom-0 left-0">
       <div className="flex justify-center space-x-30 text-sm text-gray-700">
-
-       <div className="footer-column">
-          <h4>Get the App</h4>
-          <div className="store-buttons">
-            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" />
-          </div>
-        </div>
-
          <div className="footer-column">
           <h4>Tools</h4>
           <ul>
