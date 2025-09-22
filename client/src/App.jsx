@@ -1,19 +1,19 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
-import GreyScreen from './Components/GreyScreen'
+import Body from './Components/body'
 
 function App() {
-
   return (
-    <>
-      <Navbar/>
-      <Footer/>
-    </>
-  )
-};
+    <div className="min-h-screen flex flex-col relative">
+      <Navbar />
+      <div className="flex-1 overflow-auto">
+        <Body />
+      </div>
+      <Footer className="mt-auto" />
+    </div>
+  );
+}
 
-export default App 
+export default App

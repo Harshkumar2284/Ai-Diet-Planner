@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Footer() {
+const Footer = () => {
     const year=new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-gray-200 py-3 fixed bottom-0 left-0 border-t ">
+    <footer className="w-full bg-zinc-900 text-gray-300 py-8">
       <div className="flex justify-center space-x-30 text-sm text-gray-700">
          <div className="footer-column">
           <h4>Tools</h4>
@@ -50,4 +50,7 @@ export default function Footer() {
 
       </div>
     </footer>
-  )};
+  );
+};
+
+export default Footer;
