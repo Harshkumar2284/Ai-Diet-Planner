@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .footer-column{
-    color: blue;
+    color: white;
 }
 
 .store-buttons{
@@ -9,6 +9,7 @@
     width: 150px;
 }
 .footer-column p{
-    color: black;
+    color: white;
+    font-weight: bold;
 }
 

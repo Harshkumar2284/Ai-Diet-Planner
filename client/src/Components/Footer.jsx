@@ -4,10 +4,10 @@ const Footer = () => {
     const year=new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-zinc-900 text-gray-300 py-8">
+    <footer className= "w-full bg-zinc-800 py-8 border-t border-black-900">
       <div className="flex justify-center space-x-30 text-sm text-gray-700">
          <div className="footer-column">
-          <h4>Tools</h4>
+          <h4 className="text-[#f07651]">Tools</h4>
           <ul>
             <li><a href="#">Browse Foods</a></li>
             <li><a href="#">Calorie Calculator</a></li>
@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
 
          <div className="footer-column">
-          <h4>Info</h4>
+          <h4 className="text-[#f07651]">Info</h4>
           <ul>
             <li><a href="#">Press</a></li>
             <li><a href="#">For Affiliates</a></li>
@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-column">
-          <h4>Meal Plans</h4>
+          <h4 className="text-[#f07651]">Meal Plans</h4>
           <ul>
             <li><a href="#">1500 Calorie Meal Plan</a></li>
             <li><a href="#">1800 Calorie Meal Plan</a></li>
@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-column">
-          <h4>Follow Us</h4>
+          <h4 className="text-[#f07651]">Follow Us</h4>
           <ul>
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Instagram</a></li>
