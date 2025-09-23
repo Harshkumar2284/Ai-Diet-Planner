@@ -27,7 +27,7 @@ export default function Navbar() {
         <button className='w-20 py-2 rounded-xl hover:cursor-pointer text-white font-semibold' style={{backgroundColor:"#f07651"}} onClick={handleSignUpDisplay}>SignUp</button>
         <h1 className='hover:underline hover:cursor-pointer' onClick={handleLoginDisplay}>Already a member? Sign In</h1>
       </div>
-      <GreyScreen display={display} authenticate = {authenticate}/>
+      <GreyScreen display={display} authenticate = {authenticate} setAuthenticate = {setAuthenticate}/>
     </nav>
   );
 }
