@@ -14,7 +14,7 @@ export default function Navbar() {
     setAuthenticate("register")
   }
   return (
-    <nav className=' w-full border-1 border-black py-4 bg-zinc-800 flex justify-around' style={{color:"#f07651"}}>
+    <nav className='w-full border-1 border-black py-4 bg-zinc-800 flex justify-around' style={{color:"#f07651"}}>
       <div>
         <h1 className=' text-4xl mt-3 font-lg' style={{fontFamily:"cursive"}}><span className='font-bold'>B</span>ite<span className='font-bold'>B</span>ot</h1>
       </div>
@@ -27,7 +27,7 @@ export default function Navbar() {
         <button className='w-20 py-2 rounded-xl hover:cursor-pointer text-white font-semibold' style={{backgroundColor:"#f07651"}} onClick={handleSignUpDisplay}>SignUp</button>
         <h1 className='hover:underline hover:cursor-pointer' onClick={handleLoginDisplay}>Already a member? Sign In</h1>
       </div>
-      <GreyScreen display={display} authenticate = {authenticate} setAuthenticate = {setAuthenticate}/>
+      <GreyScreen display={display} setDis={setDisplay} authenticate = {authenticate} setAuthenticate = {setAuthenticate}/>
     </nav>
   );
 }
